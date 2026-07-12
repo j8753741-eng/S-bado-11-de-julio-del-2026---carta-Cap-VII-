@@ -18,11 +18,9 @@
 <style>
 
 *{
-
 margin:0;
 padding:0;
 box-sizing:border-box;
-
 }
 
 body{
@@ -40,8 +38,6 @@ overflow-x:hidden;
 
 }
 
-/* Mesa */
-
 body::before{
 
 content:"";
@@ -51,7 +47,6 @@ position:fixed;
 inset:0;
 
 background:
-
 repeating-linear-gradient(
 90deg,
 rgba(255,255,255,.015),
@@ -66,8 +61,6 @@ pointer-events:none;
 
 }
 
-/* Libro */
-
 .book{
 
 max-width:950px;
@@ -81,7 +74,6 @@ border-radius:18px;
 padding:28px;
 
 box-shadow:
-
 0 25px 60px rgba(0,0,0,.65);
 
 border:6px solid #8f693d;
@@ -89,8 +81,6 @@ border:6px solid #8f693d;
 position:relative;
 
 }
-
-/* Grabado dorado */
 
 .cover-title{
 
@@ -105,7 +95,6 @@ color:#f7d98d;
 letter-spacing:3px;
 
 text-shadow:
-
 0 2px 0 #7b582c,
 0 0 12px rgba(255,217,141,.35);
 
@@ -113,12 +102,9 @@ margin-bottom:22px;
 
 }
 
-/* Página */
-
 .page{
 
 background:
-
 linear-gradient(#f9f0d9,#efe1bf);
 
 border-radius:10px;
@@ -128,12 +114,9 @@ padding:65px;
 position:relative;
 
 box-shadow:
-
 inset 0 0 30px rgba(0,0,0,.12);
 
 }
-
-/* Textura */
 
 .page::before{
 
@@ -144,7 +127,6 @@ position:absolute;
 inset:0;
 
 background-image:
-
 radial-gradient(rgba(90,70,40,.05) 1px,transparent 1px);
 
 background-size:18px 18px;
@@ -154,8 +136,6 @@ opacity:.55;
 pointer-events:none;
 
 }
-
-/* Filigranas */
 
 .corner{
 
@@ -169,41 +149,10 @@ opacity:.7;
 
 }
 
-.c1{
-
-top:15px;
-left:22px;
-
-}
-
-.c2{
-
-top:15px;
-right:22px;
-
-transform:rotate(90deg);
-
-}
-
-.c3{
-
-bottom:15px;
-left:22px;
-
-transform:rotate(-90deg);
-
-}
-
-.c4{
-
-bottom:15px;
-right:22px;
-
-transform:rotate(180deg);
-
-}
-
-/* Encabezado */
+.c1{top:15px;left:22px;}
+.c2{top:15px;right:22px;transform:rotate(90deg);}
+.c3{bottom:15px;left:22px;transform:rotate(-90deg);}
+.c4{bottom:15px;right:22px;transform:rotate(180deg);}
 
 .header{
 
@@ -237,13 +186,11 @@ letter-spacing:1px;
 
 }
 
-/* Saludo */
-
 .greeting{
 
 margin-top:35px;
 
-font-family:'Inter', -apple-system,;
+font-family:'Times New Roman', Times, serif;
 
 font-size:3rem;
 
@@ -252,8 +199,6 @@ color:#7b4323;
 margin-bottom:28px;
 
 }
-
-/* Texto */
 
 p{
 
@@ -268,8 +213,6 @@ color:#4d3520;
 margin-bottom:22px;
 
 }
-
-/* Letra capital */
 
 .first::first-letter{
 
@@ -304,8 +247,6 @@ margin:35px 0;
 color:#9b7643;
 
 }
-
-/* ========= PASAR LA PÁGINA ========= */
 
 .page-turn{
 
@@ -359,8 +300,7 @@ letter-spacing:2px;
 
 clip-path:polygon(0 0,100% 0,100% 75%,82% 100%,0 100%);
 
-box-shadow:
-0 10px 25px rgba(0,0,0,.18);
+box-shadow:0 10px 25px rgba(0,0,0,.18);
 
 transition:.35s;
 
@@ -370,8 +310,7 @@ transition:.35s;
 
 transform:translateY(-5px) rotate(-2deg);
 
-box-shadow:
-0 18px 35px rgba(0,0,0,.28);
+box-shadow:0 18px 35px rgba(0,0,0,.28);
 
 }
 
@@ -382,7 +321,8 @@ padding:0 12px;
 text-align:center;
 
 }
-</style>
+
+    </style>
 
 </head>
 
@@ -500,9 +440,12 @@ GRABADO FINAL
 margin:0 auto 55px;
 max-width:760px;
 padding:28px 36px;
+
 border:2px solid rgba(176,138,69,.45);
 border-radius:10px;
+
 background:rgba(255,248,228,.45);
+
 position:relative;
 
 }
@@ -510,13 +453,20 @@ position:relative;
 .book-quote::before{
 
 content:"❦";
+
 position:absolute;
+
 top:-18px;
 left:50%;
+
 transform:translateX(-50%);
+
 background:#efe1bf;
+
 padding:0 14px;
+
 font-size:26px;
+
 color:#9b7643;
 
 }
@@ -524,13 +474,21 @@ color:#9b7643;
 .book-quote p{
 
 margin:0;
+
 text-align:center;
+
 font-size:1.45rem;
+
 line-height:2;
-color:#6d3f72;
+
+color:#8b3dff;
+
 font-family:'Cormorant Garamond',serif;
+
 text-shadow:
-0 0 6px rgba(171,92,255,.18);
+0 0 5px rgba(171,92,255,.45),
+0 0 10px rgba(171,92,255,.35),
+0 0 18px rgba(171,92,255,.28);
 
 }
 
@@ -544,7 +502,8 @@ text-shadow:
 
 </div>
 
-<style> 
+<style>
+
 /*=========================================
 SELLO DE CERA
 =========================================*/
